@@ -7,6 +7,6 @@ conn {{ connection.name }}
 {% if param_key == 'name' %}
 {% else %}
     {{ param_key }}={{ connection[param_key] }}
-{% end if %}
+{% endif %}
 {% endfor %}
 {% endfor %}
