@@ -4,6 +4,9 @@
 # {{ connection.left }} -> {{ connection.right }}
 conn {{ connection.name }}
 {% for param_key in connection %}
+{% if param_key == 'name' %}
+{% else %}
     {{ param_key }}={{ connection[param_key] }}
+{% end if %}
 {% endfor %}
 {% endfor %}
