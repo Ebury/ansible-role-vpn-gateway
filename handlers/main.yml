@@ -1,7 +1,7 @@
 ---
 - name: restart ipsec
   service:
-    name: strongswan
+    name: strongswan-starter
     state: restarted
 
 - name: reload ipsec
