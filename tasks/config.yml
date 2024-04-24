@@ -23,6 +23,7 @@
       | combine({ \
         'name': item.name, \
         'left': item.local.public, \
+        'leftid': item.local.publicid, \
         'leftsubnet': (item.local.networks | join(',')), \
         'right': item.remote.public, \
         'rightsubnet': (item.remote.networks | join(',')) \
