@@ -26,6 +26,7 @@
         'leftid': item.local.publicid, \
         'leftsubnet': (item.local.networks | join(',')), \
         'right': item.remote.public, \
+        'rightid': item.remote.publicid, \
         'rightsubnet': (item.remote.networks | join(',')) \
       }) \
       | combine(item.params | default({}))] \
